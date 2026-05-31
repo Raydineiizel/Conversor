@@ -1,21 +1,25 @@
+/* RESET GLOBAL: Configurações aplicadas a absolutamente TODOS os elementos */
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif; /* Define a fonte padrão do projeto */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
 
+/* FUNDO DA PÁGINA: Configuração da área principal do site */
 body {
     background-color: #8a51fc;
 }
 
+/* LOGOTIPO: Estilização do GIF/Imagem de topo */
 .logo {
     width: 150px;
     display: block;
     margin: 20px auto;
 }
 
+/* CONTAINER PRINCIPAL (Card do Conversor) */
 main {
     width: 375px;
     background: #F4F4F4;
@@ -24,12 +28,14 @@ main {
     padding: 23px 24px 23px;
 }
 
+/* TEXTOS DE ORIENTAÇÃO (Labels) */
 label {
     color: #777777;
     font-weight: 400;
     font-size: 14px;
 }
 
+/* CAMPOS DE SELEÇÃO E ENTRADA (Selects e Inputs) */
 select, input {
     background: #ffffff;
     border: 1px solid;
@@ -45,27 +51,29 @@ select, input {
     cursor: pointer;
 }
 
+/* BOTÃO DE CONVERSÃO (Estados: Normal, Passar o mouse e Clicar) */
 button {
     background: #772fd3;
     border-radius: 5px;
-    width: 100%;
     border: none;
     height: 48px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
-    cursor: pointer;
-
+    cursor: pointer;     /* Coloca o efeito de "mãozinha" ao passar o mouse */
 }
 
+/* Efeito ao passar o mouse por cima do botão (Hover) */
 button:hover {
-    opacity: .8;
+    opacity: .8; /* Deixa o botão levemente transparente (dá o efeito de acender/mudar de cor) */
 }
 
+/* Efeito no momento exato em que o botão é clicado (Active) */
 button:active {
-    opacity: .6;
+    opacity: .6; /* Escurece/aumenta a transparência no momento do clique, dando sensação de feedback físico */
 }
 
+/* SEÇÃO DE RESULTADOS (Área inferior que mostra as moedas) */
 section {
     border: 1px solid #772fd3;
     border-radius: 20px;
@@ -76,10 +84,12 @@ section {
     align-items: center;
 }
 
+/* Imagem da Seta Indicativa */
 .arrow-img {
     margin: 15px 0;
 }
 
+/* Caixa individual de cada moeda (Agrupa Bandeira + Nome + Valor) */
 .currency-box {
     display: flex;
     flex-direction: column;
@@ -87,15 +97,15 @@ section {
     gap: 4px;
 }
 
+/* Nome descritivo da Moeda (Ex: "Real" ou "Dólar") */
 .currency {
     color: #777777;
     font-size: 14px;
-
 }
 
+/* Valor numérico do dinheiro (Ex: "R$ 0,00") */
 .currency-value {
     color: #555555;
     font-weight: 700;
     font-size: 20px;
-
 }
