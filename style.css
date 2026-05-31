@@ -55,6 +55,7 @@ select, input {
 button {
     background: #772fd3;
     border-radius: 5px;
+    width: 100%;
     border: none;
     height: 48px;
     color: #ffffff;
