@@ -58,7 +58,7 @@ function mudarMoeda() {
 
     if (selectFrom.value === "EUR") {
         currencyNameFrom.innerHTML = "Euro";
-        currencyImgFrom.src = "./assets/euro.svg"; // Certifique-se de ter essa imagem na pasta
+        currencyImgFrom.src = "./assets/Euro.svg"; // Certifique-se de ter essa imagem na pasta
     }
 
     // Executa a conversão automaticamente ao mudar o select (opcional)
