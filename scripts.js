@@ -62,7 +62,7 @@ function converterMoedas() {
     if (selectFrom.value === "BTC") {
         const valorConvertido = valorDigitado / bitcoinHoje;
 
-        // 1. Gera a formatação americana padrão (vai gerar "BTC 1,250.00000000")
+        // Gera a formatação americana padrão (vai gerar "BTC 1,250.00000000")
         const valorFormatado = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "BTC",
@@ -70,10 +70,9 @@ function converterMoedas() {
             maximumFractionDigits: 8
         }).format(valorConvertido);
 
-        // 2. Troca o texto "BTC" pelo símbolo "₿" e joga na tela
+        // Troca o texto "BTC" pelo símbolo "₿" e joga na tela
         valueFromDisplay.innerHTML = valorFormatado.replace("BTC", "₿");
     }
-
 }
 
 // Função para mudar os textos e imagens quando o usuário troca o Select
