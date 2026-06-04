@@ -14,7 +14,7 @@ body {
 
 /* LOGOTIPO: Estilização do GIF/Imagem de topo */
 .logo {
-    width: 125px;
+    width: 120px;
     display: block;
     margin: 20px auto;
 }
@@ -67,12 +67,12 @@ button {
 
 /* Efeito ao passar o mouse por cima do botão (Hover) */
 button:hover {
-    opacity: .8; /* Deixa o botão levemente transparente (dá o efeito de acender/mudar de cor) */
+    opacity: .8;
 }
 
 /* Efeito no momento exato em que o botão é clicado (Active) */
 button:active {
-    opacity: .6; /* Escurece/aumenta a transparência no momento do clique, dando sensação de feedback físico */
+    opacity: .6;
 }
 
 /* SEÇÃO DE RESULTADOS (Área inferior que mostra as moedas) */
